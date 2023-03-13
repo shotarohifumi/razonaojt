@@ -1,1 +1,47 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0em 3em;
+  padding: 2em 3em;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3em;
+  margin: 3em 5em;
+}
+
+.kv_img {
+  background-image: url(../../img_file/visual_1_pc.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  max-width: 100%;
+}
+.kv_img .kv_sm_img {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: -110px;
+  left: -90px;
+}
+.kv_img .kv_text_img {
+  position: absolute;
+  top: 88%;
+  right: -4em;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+}
+.kv_img .kv_text_img img {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */
