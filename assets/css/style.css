@@ -44,4 +44,89 @@ body {
 .kv_img .kv_text_img img {
   width: 100%;
   height: auto;
+}
+
+.articles h1 {
+  text-align: center;
+}
+
+.boxes {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.boxes .box1 {
+  height: 412px;
+  width: 320px;
+  border: solid 1px black;
+}
+.boxes .box1 p {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxes .box1 p:last-child {
+  padding-top: 90px;
+  justify-content: end;
+}
+.boxes .box2 {
+  height: 412px;
+  width: 320px;
+  border: solid 1px black;
+}
+.boxes .box2 p {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxes .box2 p:last-child {
+  padding-top: 90px;
+  justify-content: end;
+}
+.boxes .box3 {
+  height: 412px;
+  width: 320px;
+}
+.boxes .box3 p {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxes .box3 p:last-child {
+  padding-top: 90px;
+  justify-content: end;
+}
+.boxes .box4 {
+  height: 412px;
+  width: 320px;
+}
+.boxes .box4 p {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxes .box4 p:last-child {
+  padding-top: 90px;
+  justify-content: end;
+}
+.boxes .box5 {
+  height: 412px;
+  width: 320px;
+}
+.boxes .box5 p {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxes .box5 p:last-child {
+  padding-top: 90px;
+  justify-content: end;
+}
+.boxes .box6 {
+  height: 412px;
+  width: 320px;
+}
+.boxes .box6 p {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxes .box6 p:last-child {
+  padding-top: 90px;
+  justify-content: end;
 }/*# sourceMappingURL=style.css.map */
