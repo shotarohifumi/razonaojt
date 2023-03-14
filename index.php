@@ -4,7 +4,8 @@
 
     <!-- kv -->
     <section class="kv">
-        <div class="kvimg wrapper">
+
+        <!-- <div class="kvimg wrapper"> -->
             <div class="kv_img">
                 <div class="kv_sm_img"><img src="<?php echo get_template_directory_uri(); ?>/img_file/logo.png" alt=""></div>
                 <div class="kv_text_img"><img src="<?php echo get_template_directory_uri(); ?>/img_file/visual_text_pc.png" alt=""></div>

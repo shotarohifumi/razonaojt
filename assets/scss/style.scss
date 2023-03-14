@@ -16,7 +16,7 @@ $sp: 768px;
 }
 
 html {
-    font-size: 62.5%;
+    // font-size: 62.5%;
     // デフォルト(16px)の62.5%なので
     // デフォルト10px になる！
 		font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
@@ -47,6 +47,10 @@ body {
     // 24px
 }
 
+// .kv{
+//     max-width: 1152px;
+// }
+
 .kv_img {
     background-image: url(../../img_file/visual_1_pc.png);
     background-position: center top;
@@ -55,7 +59,8 @@ body {
     height: 70vh;
     width: 100%;
     position: relative;
-    max-width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
 
     .kv_sm_img {
         position: absolute;
@@ -88,6 +93,7 @@ body {
     }
 }
 
+
 .kv_text {
     font-size: 1.5rem;
 }
@@ -103,6 +109,7 @@ footer {
     height: 6em;
     text-align: center;
     line-height: 6em;
+    max-width: 100%;
 
     p {
 

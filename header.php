@@ -14,13 +14,20 @@
 
 <body>
     <!-- header -->
+    <?php wp_nav_menu(); ?>
     <header class="header_right">
-        <nav>
-            <ul class="nav_list">
+        <nav class="nav_list">
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'header'
+            ));
+            ?>
+        </nav>
+        <!-- <ul class="nav_list">
                 <li>Menu01</li>
                 <li>Menu02</li>
                 <li>Menu03</li>
                 <li>Menu04</li>
             </ul>
-            </nav4>
+            </nav4> -->
     </header>

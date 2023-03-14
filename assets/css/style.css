@@ -1,6 +1,5 @@
 @charset "UTF-8";
 html {
-  font-size: 62.5%;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
@@ -35,7 +34,8 @@ body {
   height: 70vh;
   width: 100%;
   position: relative;
-  max-width: 100%;
+  max-width: 1152px;
+  margin: 0 auto;
 }
 .kv_img .kv_sm_img {
   position: absolute;
@@ -71,6 +71,7 @@ footer {
   height: 6em;
   text-align: center;
   line-height: 6em;
+  max-width: 100%;
 }
 footer p {
   color: white;
