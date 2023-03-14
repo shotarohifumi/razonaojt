@@ -1,13 +1,3 @@
-@charset "UTF-8";
-/* 必ず入れなければならない情報 */
-/* 
-Theme Name : 北谷町観光協会
-Theme URI : https://localhost/razonaojt/
-Author : Razona
-Author URI : https://technext.dreamcatcher.jp
-Description : 北谷町観光協会 のホームページ
- */
-/* コメントアウトも読み込まれている */
 html {
   font-size: 62.5%;
 }

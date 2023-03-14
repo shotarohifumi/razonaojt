@@ -6,8 +6,8 @@
     <section class="kv">
         <div class="kvimg wrapper">
             <div class="kv_img">
-                <div class="kv_sm_img"><img src="./img_file/logo.png" alt=""></div>
-                <div class="kv_text_img"><img src="./img_file/visual_text_pc.png" alt=""></div>
+                <div class="kv_sm_img"><img src="<?php echo get_template_directory_uri(); ?>/img_file/logo.png" alt=""></div>
+                <div class="kv_text_img"><img src="<?php echo get_template_directory_uri(); ?>/img_file/visual_text_pc.png" alt=""></div>
             </div>
 
         </div>
@@ -57,21 +57,7 @@
         </div>
     </section>
 
-    
+
 <!-- フッターの読み込み -->
 <?php get_footer(); ?>
 
-    <footer>
-        <p>Copyright <small>&copy;</small>Shinohara All RIGHT RESERVED.</p>
-    </footer>
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-</body>
-
-</html>
