@@ -99,11 +99,11 @@ body {
     }
 }
 
-.kv_text{
+.kv_text {
     font-size: 1.5rem;
 }
 
-.inner{
+.inner {
     margin: 0rem 8rem;
 }
 
@@ -121,4 +121,109 @@ footer {
         color: white;
     }
 
+}
+
+// shotaro's corner
+.articles h1 {
+    text-align: center;
+
+}
+
+.boxes {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .box1 {
+        height: 412px;
+        width: 320px;
+        border: solid 1px black;
+
+        p {
+            display: flex;
+            flex-wrap: wrap;
+
+            &:last-child {
+                padding-top: 90px;
+                justify-content: end;
+            }
+        }
+    }
+
+    .box2 {
+        height: 412px;
+        width: 320px;
+        border: solid 1px black;
+
+        p {
+            display: flex;
+            flex-wrap: wrap;
+
+            &:last-child {
+                padding-top: 90px;
+                justify-content: end;
+            }
+        }
+    }
+
+    .box3 {
+        height: 412px;
+        width: 320px;
+
+        p {
+            display: flex;
+            flex-wrap: wrap;
+
+            &:last-child {
+                padding-top: 90px;
+                justify-content: end;
+            }
+        }
+    }
+
+    .box4 {
+        height: 412px;
+        width: 320px;
+
+        p {
+            display: flex;
+            flex-wrap: wrap;
+
+            &:last-child {
+                padding-top: 90px;
+                justify-content: end;
+            }
+        }
+    }
+
+    .box5 {
+        height: 412px;
+        width: 320px;
+
+        p {
+            display: flex;
+            flex-wrap: wrap;
+
+            &:last-child {
+                padding-top: 90px;
+                justify-content: end;
+            }
+        }
+    }
+
+    .box6 {
+        height: 412px;
+        width: 320px;
+
+        p {
+            display: flex;
+            flex-wrap: wrap;
+
+            &:last-child {
+                padding-top: 90px;
+                justify-content: end;
+            }
+        }
+    }
 }
