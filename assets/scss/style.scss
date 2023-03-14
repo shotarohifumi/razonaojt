@@ -1,11 +1,52 @@
+/* 必ず入れなければならない情報 */
+
+@charset "UTF-8";
+/* 
+Theme Name : 北谷町観光協会
+Theme URI : https://localhost/razonaojt/
+Author : Razona
+Author URI : https://technext.dreamcatcher.jp
+Description : 北谷町観光協会 のホームページ
+ */
+
+/* コメントアウトも読み込まれている */
+
+// ブレイクポイントを指定
+$pc: 1152px;
+$sp: 768px;
+
+@mixin pc {
+    @media screen and (max-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: ($sp)) {
+        @content;
+    }
+}
+
+html {
+    font-size: 62.5%;
+    // デフォルト(16px)の62.5%なので
+    // デフォルト10px になる！
+}
+
+
 body {
     margin: 0;
     padding: 0;
 }
 
 .wrapper {
-    margin: 0em 3em;
-    padding: 2em 3em;
+    margin: 0rem 10rem;
+    padding: 2rem 3rem;
+
+    @include sp {
+        margin: 0 auto;
+    }
+
 }
 
 .nav_list {
@@ -13,34 +54,38 @@ body {
     justify-content: flex-end;
     gap: 3em;
     margin: 3em 5em;
+    font-size: 1.5rem;
+    // １５px
 }
-
-
-
 
 .kv_img {
     background-image: url(../../img_file/visual_1_pc.png);
     background-position: center top;
     background-repeat: no-repeat;
-    background-size:cover;
-    height: 90vh;
+    background-size: cover;
+    height: 70vh;
     width: 100%;
     position: relative;
     max-width: 100%;
 
     .kv_sm_img {
         position: absolute;
-        
+
         width: 30%;
         height: auto;
         top: -110px;
         left: -90px;
+
+        // @include sp {
+        //     margin: 0 auto;
+        // }
+
     }
 
     .kv_text_img {
         position: absolute;
         top: 88%;
-        right:-4em;
+        right: -4em;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
@@ -52,4 +97,28 @@ body {
             height: auto;
         }
     }
+}
+
+.kv_text{
+    font-size: 1.5rem;
+}
+
+.inner{
+    margin: 0rem 8rem;
+}
+
+// footer
+
+footer {
+    background-color: black;
+    height: 6em;
+    text-align: center;
+    line-height: 6em;
+
+    p {
+
+
+        color: white;
+    }
+
 }

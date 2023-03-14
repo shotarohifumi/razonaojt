@@ -1,11 +1,30 @@
+@charset "UTF-8";
+/* 必ず入れなければならない情報 */
+/* 
+Theme Name : 北谷町観光協会
+Theme URI : https://localhost/razonaojt/
+Author : Razona
+Author URI : https://technext.dreamcatcher.jp
+Description : 北谷町観光協会 のホームページ
+ */
+/* コメントアウトも読み込まれている */
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
 .wrapper {
-  margin: 0em 3em;
-  padding: 2em 3em;
+  margin: 0rem 10rem;
+  padding: 2rem 3rem;
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin: 0 auto;
+  }
 }
 
 .nav_list {
@@ -13,6 +32,7 @@ body {
   justify-content: flex-end;
   gap: 3em;
   margin: 3em 5em;
+  font-size: 1.5rem;
 }
 
 .kv_img {
@@ -20,7 +40,7 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 70vh;
   width: 100%;
   position: relative;
   max-width: 100%;
@@ -44,4 +64,22 @@ body {
 .kv_img .kv_text_img img {
   width: 100%;
   height: auto;
+}
+
+.kv_text {
+  font-size: 1.5rem;
+}
+
+.inner {
+  margin: 0rem 8rem;
+}
+
+footer {
+  background-color: black;
+  height: 6em;
+  text-align: center;
+  line-height: 6em;
+}
+footer p {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
