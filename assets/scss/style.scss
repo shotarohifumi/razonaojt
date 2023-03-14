@@ -16,7 +16,7 @@ $sp: 768px;
 }
 
 html {
-    font-size: 62.5%;
+    // font-size: 62.5%;
     // デフォルト(16px)の62.5%なので
     // デフォルト10px になる！
 		font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
@@ -24,13 +24,14 @@ html {
 
 
 body {
-    margin: 0;
+		width: 1024px;
+    margin: 0 auto;
     padding: 0;
 }
 
 .wrapper {
-    margin: 0rem 10rem;
-    padding: 2rem 3rem;
+    // margin: 0rem 10rem;
+    // padding: 2rem 3rem;
 
     @include sp {
         margin: 0 auto;
@@ -93,7 +94,7 @@ body {
 }
 
 .inner {
-    margin: 0rem 8rem;
+    margin: 0rem -4rem;
 }
 
 // footer
@@ -115,6 +116,8 @@ footer {
 // shotaro's corner
 .articles h1 {
     text-align: center;
+		font-size: 1.5rem;
+		margin: 1.5rem 0;
 
 }
 
@@ -126,9 +129,7 @@ footer {
 
     .box1 {
         height: 412px;
-        width: 320px;
-        border: solid 1px black;
-
+        width: 33%;
         p {
             display: flex;
             flex-wrap: wrap;
@@ -142,8 +143,8 @@ footer {
 
     .box2 {
         height: 412px;
-        width: 320px;
-        border: solid 1px black;
+        width: 33%;
+
 
         p {
             display: flex;
@@ -158,7 +159,7 @@ footer {
 
     .box3 {
         height: 412px;
-        width: 320px;
+        width: 33%;
 
         p {
             display: flex;
@@ -173,7 +174,7 @@ footer {
 
     .box4 {
         height: 412px;
-        width: 320px;
+        width: 33%;
 
         p {
             display: flex;
@@ -188,7 +189,7 @@ footer {
 
     .box5 {
         height: 412px;
-        width: 320px;
+        width: 33%;
 
         p {
             display: flex;
@@ -203,7 +204,7 @@ footer {
 
     .box6 {
         height: 412px;
-        width: 320px;
+        width: 33%;
 
         p {
             display: flex;

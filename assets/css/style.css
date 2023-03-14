@@ -1,18 +1,14 @@
 @charset "UTF-8";
 html {
-  font-size: 62.5%;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 body {
-  margin: 0;
+  width: 1024px;
+  margin: 0 auto;
   padding: 0;
 }
 
-.wrapper {
-  margin: 0rem 10rem;
-  padding: 2rem 3rem;
-}
 @media screen and (max-width: 768px) {
   .wrapper {
     margin: 0 auto;
@@ -63,7 +59,7 @@ body {
 }
 
 .inner {
-  margin: 0rem 8rem;
+  margin: 0rem -4rem;
 }
 
 footer {
@@ -78,6 +74,8 @@ footer p {
 
 .articles h1 {
   text-align: center;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .boxes {
@@ -88,8 +86,7 @@ footer p {
 }
 .boxes .box1 {
   height: 412px;
-  width: 320px;
-  border: solid 1px black;
+  width: 33%;
 }
 .boxes .box1 p {
   display: flex;
@@ -101,8 +98,7 @@ footer p {
 }
 .boxes .box2 {
   height: 412px;
-  width: 320px;
-  border: solid 1px black;
+  width: 33%;
 }
 .boxes .box2 p {
   display: flex;
@@ -114,7 +110,7 @@ footer p {
 }
 .boxes .box3 {
   height: 412px;
-  width: 320px;
+  width: 33%;
 }
 .boxes .box3 p {
   display: flex;
@@ -126,7 +122,7 @@ footer p {
 }
 .boxes .box4 {
   height: 412px;
-  width: 320px;
+  width: 33%;
 }
 .boxes .box4 p {
   display: flex;
@@ -138,7 +134,7 @@ footer p {
 }
 .boxes .box5 {
   height: 412px;
-  width: 320px;
+  width: 33%;
 }
 .boxes .box5 p {
   display: flex;
@@ -150,7 +146,7 @@ footer p {
 }
 .boxes .box6 {
   height: 412px;
-  width: 320px;
+  width: 33%;
 }
 .boxes .box6 p {
   display: flex;
