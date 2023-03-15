@@ -15,7 +15,7 @@ body {
   }
 }
 
-.nav_list {
+#menu-menu-1 {
   display: flex;
   justify-content: flex-end;
   gap: 3em;
@@ -23,7 +23,7 @@ body {
   font-size: 1.5rem;
 }
 
-#nemu- .kv_img {
+/* .kv_img {
   background-image: url(../../img_file/visual_1_pc.png);
   background-position: center top;
   background-repeat: no-repeat;
@@ -33,15 +33,15 @@ body {
   position: relative;
   max-width: 1152px;
   margin: 0 auto;
-}
-#nemu- .kv_img .kv_sm_img {
+} */
+.kv_img .kv_sm_img {
   position: absolute;
   width: 30%;
   height: auto;
   top: -110px;
   left: -90px;
 }
-#nemu- .kv_img .kv_text_img {
+.kv_img .kv_text_img {
   position: absolute;
   top: 88%;
   right: -4em;
@@ -50,7 +50,7 @@ body {
   transform: translateY(-50%);
   display: block;
 }
-#nemu- .kv_img .kv_text_img img {
+.kv_img .kv_text_img img {
   width: 100%;
   height: auto;
 }
