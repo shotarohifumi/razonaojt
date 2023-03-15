@@ -81,6 +81,7 @@
 
             </div>
         </div>
+<<<<<<< HEAD
         <div class="box2">
             <img src="<?php echo get_template_directory_uri(); ?>/img_file/post_img_2.png" alt="village">
             <p>2018/5/19</p>
@@ -112,6 +113,10 @@
             <p>READ MORE</p>
         </div>
 </div>
+=======
+       
+    </div>
+>>>>>>> c4f6cbc9bdf33c6099335d6f35479829e3db67de
 </section>
 </div>
 </div>
