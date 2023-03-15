@@ -127,13 +127,14 @@ footer {
 
 @mixin box{
 	height: 400px;
-	width: 33%;
+	width: 31%;
 	border: solid 1px black;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 	img{
 		width: 100%;
 	}
-	p {
+	p:last-of-type{
+			height: 110px;
 			display: flex;
 			flex-wrap: wrap;
 	}
@@ -142,11 +143,10 @@ footer {
 		flex-direction: column;
 		padding: 0 10px;
 	}
-	// a{
-		// position: relative;
-		// bottom: -55px;
-		// left: 230px;
-	// }
+	a{
+		display: flex;
+		justify-content: end;
+	}
 }
 
 .boxes {
