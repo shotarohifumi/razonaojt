@@ -23,17 +23,17 @@ body {
   font-size: 1.5rem;
 }
 
-/* .kv_img {
-  background-image: url(../../img_file/visual_1_pc.png);
+.kv_img {
+  /* background-image: url(../../img_file/visual_1_pc.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
-  width: 100%;
+  width: 100%; */
   position: relative;
   max-width: 1152px;
   margin: 0 auto;
-} */
+}
 .kv_img .kv_sm_img {
   position: absolute;
   width: 30%;
@@ -68,7 +68,7 @@ footer {
   height: 6em;
   text-align: center;
   line-height: 6em;
-  max-width: 100%;
+  width: 100vw;
 }
 footer p {
   color: white;
