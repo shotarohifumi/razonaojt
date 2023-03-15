@@ -87,74 +87,115 @@ footer p {
   justify-content: space-around;
 }
 .boxes .box1 {
-  height: 412px;
+  height: 400px;
   width: 33%;
+  border: solid 1px black;
+  margin-bottom: 15px;
+}
+.boxes .box1 img {
+  width: 100%;
 }
 .boxes .box1 p {
   display: flex;
   flex-wrap: wrap;
 }
-.boxes .box1 p:last-child {
-  padding-top: 90px;
-  justify-content: end;
+.boxes .box1 .words {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
 }
 .boxes .box2 {
-  height: 412px;
+  height: 400px;
   width: 33%;
+  border: solid 1px black;
+  margin-bottom: 15px;
+}
+.boxes .box2 img {
+  width: 100%;
 }
 .boxes .box2 p {
   display: flex;
   flex-wrap: wrap;
 }
-.boxes .box2 p:last-child {
-  padding-top: 90px;
-  justify-content: end;
+.boxes .box2 .words {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
 }
 .boxes .box3 {
-  height: 412px;
+  height: 400px;
   width: 33%;
+  border: solid 1px black;
+  margin-bottom: 15px;
+}
+.boxes .box3 img {
+  width: 100%;
 }
 .boxes .box3 p {
   display: flex;
   flex-wrap: wrap;
 }
-.boxes .box3 p:last-child {
-  padding-top: 90px;
-  justify-content: end;
+.boxes .box3 .words {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
 }
 .boxes .box4 {
-  height: 412px;
+  height: 400px;
   width: 33%;
+  border: solid 1px black;
+  margin-bottom: 15px;
+}
+.boxes .box4 img {
+  width: 100%;
 }
 .boxes .box4 p {
   display: flex;
   flex-wrap: wrap;
 }
-.boxes .box4 p:last-child {
-  padding-top: 90px;
-  justify-content: end;
+.boxes .box4 .words {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
 }
 .boxes .box5 {
-  height: 412px;
+  height: 400px;
   width: 33%;
+  border: solid 1px black;
+  margin-bottom: 15px;
+}
+.boxes .box5 img {
+  width: 100%;
 }
 .boxes .box5 p {
   display: flex;
   flex-wrap: wrap;
 }
-.boxes .box5 p:last-child {
-  padding-top: 90px;
-  justify-content: end;
+.boxes .box5 .words {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
 }
 .boxes .box6 {
-  height: 412px;
+  height: 400px;
   width: 33%;
+  border: solid 1px black;
+  margin-bottom: 15px;
+}
+.boxes .box6 img {
+  width: 100%;
 }
 .boxes .box6 p {
   display: flex;
   flex-wrap: wrap;
 }
-.boxes .box6 p:last-child {
-  padding-top: 90px;
-  justify-content: end;
+.boxes .box6 .words {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.wakukage {
+  border: 1px solid black;
+  box-shadow: 0 0 10px 5px;
 }/*# sourceMappingURL=style.css.map */
