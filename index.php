@@ -32,7 +32,7 @@
                 <div class="words">
                     <p>2018/5/20</p>
                     <p>おしゃれなカフェがありますよ</p>
-                    <a>READ MORE</a>
+                    <a class="underline" href="#">READ MORE</a>
                 </div>
 
             </div>
@@ -41,7 +41,7 @@
                 <div class="words">
                     <p>2018/5/19</p>
                     <p>あのネオンはいつ交換するのか！？観覧車の謎に迫る！</p>
-                    <a>READ MORE</a>
+                    <a class="underline" href="#">READ MORE</a>
                 </div>
 
             </div>
@@ -50,7 +50,7 @@
                 <div class="words">
                     <p>2018/5/18</p>
                     <p>ラソナの社内はこんなのよ</p>
-                    <a>READ MORE</a>
+                    <a class="underline" href="#">READ MORE</a>
                 </div>
 
             </div>
@@ -59,7 +59,7 @@
                 <div class="words">
                     <p>2018/5/17</p>
                     <p>お隣のアラハはハワイ？</p>
-                    <a>READ MORE</a>
+                    <a class="underline" href="#">READ MORE</a>
                 </div>
 
             </div>
@@ -68,7 +68,7 @@
                 <div class="words">
                     <p>2018/5/16</p>
                     <p>なぜテント？ラソナの人に聞いてみた</p>
-                    <a>READ MORE</a>
+                    <a class="underline" href="#">READ MORE</a>
                 </div>
             </div>
             <div class="box6">
@@ -76,9 +76,8 @@
                 <div class="words">
                     <p>2018/5/15</p>
                     <p>ベイエリアおしゃれすぎる問題</p>
-                    <a>READ MORE</a>
+                    <a class="underline" href="#">READ MORE</a>
                 </div>
-
             </div>
         </div>
        
@@ -86,9 +85,6 @@
 </section>
 </div>
 </div>
-
-
-
 
 <!-- フッターの読み込み -->
 <?php get_footer(); ?>

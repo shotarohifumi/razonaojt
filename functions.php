@@ -1,7 +1,7 @@
 <?php
 
 add_theme_support('menus');
-
+add_theme_support("post-thumbnails");
 
 //メニュー有効
 function register_my_menus()
@@ -20,3 +20,5 @@ function my_script_init()
     wp_enqueue_script('jQuery_cdn', '//code.jQuery.com/jQuery-3.5.1.min.js');
 }
 add_action('wp_footer', 'my_script_init');
+
+?>
