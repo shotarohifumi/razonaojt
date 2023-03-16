@@ -18,14 +18,14 @@
         <?php //wp_nav_menu(); 
         ?>
         <header class="header_right">
-            <nav class="nav_list">
-                <?php
 
-                wp_nav_menu(array(
-                    'theme_location' => 'header'
-                ));
-                ?>
-            </nav>
+            <?php
+
+            wp_nav_menu(array(
+                'theme_location' => 'header'
+            ));
+            ?>
+
             <!-- <ul class="nav_list">
                 <li>Menu01</li>
                 <li>Menu02</li>
