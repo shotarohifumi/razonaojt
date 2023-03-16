@@ -108,12 +108,15 @@ footer {
 }
 
 // shotaro's corner
-.articles h1 {
+h1 {
     text-align: center;
     font-size: 1.5rem;
     margin: 3rem 0 1.5rem 0;
 		font-weight: bold;
-
+}
+.articles{
+	width: 1024px;
+	display: flex;
 }
 
 @mixin box{
@@ -153,25 +156,6 @@ footer {
         @include box;
     }
 
-    .box2 {
-        @include box;
-    }
-
-    .box3 {
-        @include box;
-    }
-
-    .box4 {
-        @include box;
-    }
-
-    .box5 {
-        @include box;
-    }
-
-    .box6 {
-        @include box;
-    }
 }
 .underline{
 	display: inline-block;
@@ -205,6 +189,25 @@ footer {
     0 38.4px 34.8px rgba(0, 0, 0, 0.1),
     0 101px 74px rgba(0, 0, 0, 0.13);
 }
+
+// .mbtn{
+// 	// display: inline-block;
+// 	padding: 0.8em 3em;
+// 	background-color: #808080;
+// 	box-shadow: 0 5px 0 #696969;
+// 	border-radius: 60px;
+// 	color: #fff;
+// 	cursor: pointer;
+// 	text-decoration: none;
+// 	display: flex;
+// 	justify-content: center;
+// 	width: 20px;
+// 	margin: 50px auto;
+// 	&:active{
+// 		box-shadow: none;
+// 		transform: translateY(5px);
+// 	}
+// }
 
 @media screen and (max-width: ($sp)) {
 	html{

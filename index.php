@@ -24,66 +24,39 @@
         </section>
     </div>
 
+		<h1>Latest Articles</h1>
+
     <section class="articles wrapper">
-        <h1>Latest Articles</h1>
-        <div class="boxes">
+		<div class="boxes">
+				
+					<?php
+					if (have_posts()):
+						while(have_posts()):
+							the_post();
+					?>
+
             <div class="box1">
-                <img src="<?php echo get_template_directory_uri(); ?>/img_file/post_img_1.png" alt="cafe">
+                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="cafe">
                 <div class="words">
-                    <p>2018/5/20</p>
-                    <p>おしゃれなカフェがありますよ</p>
-                    <a class="underline" href="#">READ MORE</a>
-                </div>
-
-            </div>
-            <div class="box2">
-                <img src="<?php echo get_template_directory_uri(); ?>/img_file/post_img_2.png" alt="village">
-                <div class="words">
-                    <p>2018/5/19</p>
-                    <p>あのネオンはいつ交換するのか！？観覧車の謎に迫る！</p>
-                    <a class="underline" href="#">READ MORE</a>
-                </div>
-
-            </div>
-            <div class="box3">
-                <img src="<?php echo get_template_directory_uri(); ?>/img_file/post_img_3.png" alt="office">
-                <div class="words">
-                    <p>2018/5/18</p>
-                    <p>ラソナの社内はこんなのよ</p>
-                    <a class="underline" href="#">READ MORE</a>
-                </div>
-
-            </div>
-            <div class="box4">
-                <img src="<?php echo get_template_directory_uri(); ?>/img_file/post_img_4.png" alt="araha">
-                <div class="words">
-                    <p>2018/5/17</p>
-                    <p>お隣のアラハはハワイ？</p>
-                    <a class="underline" href="#">READ MORE</a>
-                </div>
-
-            </div>
-            <div class="box5">
-                <img src="<?php echo get_template_directory_uri(); ?>/img_file/post_img_5.png" alt="tent">
-                <div class="words">
-                    <p>2018/5/16</p>
-                    <p>なぜテント？ラソナの人に聞いてみた</p>
-                    <a class="underline" href="#">READ MORE</a>
+                    <p><?php echo get_the_date(); ?></p>
+                    <p><?php the_title(); ?></p>
+                    <a class="underline" href="<?php the_permalink(); ?>">READ MORE</a>
                 </div>
             </div>
-            <div class="box6">
-                <img src="<?php echo get_template_directory_uri(); ?>/img_file/post_img_6.png" alt="bayarea">
-                <div class="words">
-                    <p>2018/5/15</p>
-                    <p>ベイエリアおしゃれすぎる問題</p>
-                    <a class="underline" href="#">READ MORE</a>
-                </div>
-            </div>
-        </div>
-       
+         
+						<?php
+							endwhile;
+							else:
+						?>
+						<div class="box1">
+							<p>表示する記事がありません</p>
+						</div>
+						<?php endif; ?>
     </div>
-</section>
-</div>
+		</section>
+
+		<!-- <a href="<?php the_permalink(); ?>" class="mbtn">more</a> -->
+
 </div>
 
 <!-- フッターの読み込み -->
