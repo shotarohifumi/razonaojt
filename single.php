@@ -2,7 +2,7 @@
 
 <h1>More Articles</h1>
 
-    <section class="articles wrapper">
+    <section>	
 		<div class="boxes">
 				
 					<?php

@@ -55,7 +55,7 @@
     </div>
 		</section>
 
-		<!-- <a href="<?php the_permalink(); ?>" class="mbtn">more</a> -->
+		<a href="<?php the_permalink(); ?>" class="mbtn">more</a>
 
 </div>
 
