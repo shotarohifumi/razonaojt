@@ -28,11 +28,22 @@
 
     <section class="articles wrapper">
 		<div class="boxes">
-				
+		<?php $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;?>
+		<?php
+		$args = array(
+		'post_type' => 'post',
+		'posts_per_page' => 6,
+		'paged' => $paged,
+		'orderby' => 'post_date',
+		'order' => 'DESC',
+		);
+			?>
+			<?php $posts = new WP_Query($args);?>
 					<?php
-					if (have_posts()):
-						while(have_posts()):
-							the_post();
+					if ($posts->have_posts()):
+						while($posts->have_posts()):
+							$posts->the_post();
+
 					?>
 
             <div class="box1">
@@ -51,13 +62,15 @@
 						<div class="box1">
 							<p>表示する記事がありません</p>
 						</div>
-						<?php endif; ?>
+						<?php endif; 							wp_reset_postdata();?>
     </div>
 		</section>
 
-		<a href="<?php the_permalink(); ?>" class="mbtn">more</a>
+		<span href="" class="mbtn">more</span>
 
 </div>
+
+
 
 <!-- フッターの読み込み -->
 <?php get_footer(); ?>
