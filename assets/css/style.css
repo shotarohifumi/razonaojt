@@ -155,10 +155,31 @@ h1 {
     width: 100%;
   }
   .n2_clear {
-    width: 100%;
+    width: 100vw;
+    position: static;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1em;
   }
   .n2_clear .kv_text_img img {
     display: none;
+  }
+  .n2_clear .kv_sm_img {
+    display: flex;
+    justify-content: center;
+    position: static;
+  }
+  #global__navi-menu {
+    display: none;
+  }
+  #mg-wprm-wrap {
+    background-color: rgba(239, 239, 239, 0.4588235294);
+  }
+  html body div #wprmenu_bar {
+    height: 42px;
+    margin: 50px 0px;
+    background-color: transparent;
   }
   .boxes {
     margin: auto 0;
