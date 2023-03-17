@@ -65,7 +65,7 @@ footer p {
   color: white;
 }
 
-.articles h1 {
+h1 {
   text-align: center;
   font-size: 1.5rem;
   margin: 3rem 0 1.5rem 0;
@@ -98,121 +98,6 @@ footer p {
   padding: 0 10px;
 }
 .boxes .box1 a {
-  display: flex;
-  justify-content: end;
-}
-.boxes .box2 {
-  height: 400px;
-  width: 31%;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-.boxes .box2 img {
-  width: 100%;
-}
-.boxes .box2 p:last-of-type {
-  height: 110px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.boxes .box2 .words {
-  display: flex;
-  flex-direction: column;
-  padding: 0 10px;
-}
-.boxes .box2 a {
-  display: flex;
-  justify-content: end;
-}
-.boxes .box3 {
-  height: 400px;
-  width: 31%;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-.boxes .box3 img {
-  width: 100%;
-}
-.boxes .box3 p:last-of-type {
-  height: 110px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.boxes .box3 .words {
-  display: flex;
-  flex-direction: column;
-  padding: 0 10px;
-}
-.boxes .box3 a {
-  display: flex;
-  justify-content: end;
-}
-.boxes .box4 {
-  height: 400px;
-  width: 31%;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-.boxes .box4 img {
-  width: 100%;
-}
-.boxes .box4 p:last-of-type {
-  height: 110px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.boxes .box4 .words {
-  display: flex;
-  flex-direction: column;
-  padding: 0 10px;
-}
-.boxes .box4 a {
-  display: flex;
-  justify-content: end;
-}
-.boxes .box5 {
-  height: 400px;
-  width: 31%;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-.boxes .box5 img {
-  width: 100%;
-}
-.boxes .box5 p:last-of-type {
-  height: 110px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.boxes .box5 .words {
-  display: flex;
-  flex-direction: column;
-  padding: 0 10px;
-}
-.boxes .box5 a {
-  display: flex;
-  justify-content: end;
-}
-.boxes .box6 {
-  height: 400px;
-  width: 31%;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-.boxes .box6 img {
-  width: 100%;
-}
-.boxes .box6 p:last-of-type {
-  height: 110px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.boxes .box6 .words {
-  display: flex;
-  flex-direction: column;
-  padding: 0 10px;
-}
-.boxes .box6 a {
   display: flex;
   justify-content: end;
 }
