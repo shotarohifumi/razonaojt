@@ -8,30 +8,25 @@
     <title>北谷町観光協会!</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <?php wp_head(); ?>
 </head>
 
 <body>
     <div class="allwrapper">
-        <!-- header -->
-        <?php //wp_nav_menu(); 
-        ?>
-        <header class="header_right">
 
-            <?php
-
-            wp_nav_menu(array(
-                'theme_location' => 'header'
+            <?php wp_nav_menu(array(
+                'theme_location' => 'header',
+                'hamburger' => 'ハンバーガーメニュー',
+                'container' => 'div',
+                'depth' => 1,
+                'container_class' => 'global__navi-container',
+                'menu_id'         => 'global__navi-menu', // ulのid名
+                'menu_class' => 'global__navi-menu', // ulのclass名
             ));
             ?>
+        </div>
 
-            <!-- <ul class="nav_list">
-                <li>Menu01</li>
-                <li>Menu02</li>
-                <li>Menu03</li>
-                <li>Menu04</li>
-            </ul>
-            </nav4> -->
-        </header>
+   
     </div>

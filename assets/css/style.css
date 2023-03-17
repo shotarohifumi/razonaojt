@@ -7,34 +7,17 @@ html {
   width: 1153px;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
-  .allwrapper {
-    width: 100%;
-    margin: 0;
-  }
-}
 
 .wrapper {
   width: 1024px;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
-  .wrapper {
-    width: 100%;
-    margin: 0;
-  }
-}
 
-#menu-menu-1 {
+#global__navi-menu {
   display: flex;
   justify-content: flex-end;
   gap: 3em;
   margin: 50px 0px;
-}
-@media screen and (max-width: 768px) {
-  #menu-menu-1 {
-    display: none;
-  }
 }
 
 .n2_clear {
@@ -267,6 +250,12 @@ footer p {
   }
   .wrapper {
     width: 100%;
+  }
+  .n2_clear {
+    width: 100%;
+  }
+  .n2_clear .kv_text_img img {
+    display: none;
   }
   .boxes {
     margin: auto 0;
