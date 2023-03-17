@@ -2,17 +2,6 @@
 $pc: 1152px;
 $sp: 768px;
 
-@mixin pc {
-    @media screen and (max-width: ($pc)) {
-        @content;
-    }
-}
-
-@mixin sp {
-    @media screen and (max-width: ($sp)) {
-        @content;
-    }
-}
 
 html {
     // font-size: 62.5%;
@@ -21,53 +10,39 @@ html {
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
+* {
+    //  border: 1px solid black;
+}
+
 
 .allwrapper {
     width: 1153px;
     margin: 0 auto;
-
-    @include sp {
-        width: 100%;
-        margin: 0;
-    }
 }
 
 
 .wrapper {
     width: 1024px;
     margin: 0 auto;
-
-    @include sp {
-        width: 100%;
-        margin: 0;
-    }
 }
 
 
 
-#menu-menu-1 {
+#global__navi-menu {
     display: flex;
     justify-content: flex-end;
     gap: 3em;
     margin: 50px 0px; // font-size: 1.5rem;
 
-        @include sp {
-        display: none;
-    }
 }
+
+
 
 
 .n2_clear {
     position: relative;
     max-width: 1024px;
     margin: 0 auto;
-
-    // @include sp {
-    //     width: 100vw;
-    //     display: contents;
-    // }
-
-
 
     .kv_sm_img {
         position: absolute;
@@ -124,42 +99,45 @@ footer {
 
 
 
+
+
 // shotaro's corner
 h1 {
     text-align: center;
     font-size: 1.5rem;
     margin: 3rem 0 1.5rem 0;
-		font-weight: bold;
-}
-.articles{
-	width: 1024px;
-	display: flex;
+    font-weight: bold;
+
 }
 
-@mixin box{
-	height: 400px;
-	width: 31%;
-	font-weight: bold;
-	margin-bottom: 25px;
-	img{
-		width: 100%;
-	}
-	p:last-of-type{
-			height: 110px;
-			display: flex;
-			flex-wrap: wrap;
-	}
-	.words{
-		display: flex;
-		flex-direction: column;
-		padding: 0 10px;
-	}
-	a{
-		display: flex;
-		justify-content: end;
-		// padding-bottom: 7px;
-		// border-bottom: solid;
-	}
+@mixin box {
+    height: 400px;
+    width: 31%;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+    img {
+        width: 100%;
+    }
+
+    p:last-of-type {
+        height: 110px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .words {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    a {
+        display: flex;
+        justify-content: end;
+        // padding-bottom: 7px;
+        // border-bottom: solid;
+    }
 }
 
 .boxes {
@@ -174,37 +152,57 @@ h1 {
     }
 
 }
-.underline{
-	display: inline-block;
-	padding-bottom: 7px;
-	position: relative;
-	&::after {
-		background-color: black;
-		bottom: 0;
-		content: "";
-		display: block;
-		height: 1px;
-		right: 0;
-		position: absolute;
-		transition: .5s all;
-		width: 5%;
-	}
-	&:hover::after {
-		width: 33%;
-	}
+
+//     .box3 {
+//         @include box;
+//     }
+
+//     .box4 {
+//         @include box;
+//     }
+
+//     .box5 {
+//         @include box;
+//     }
+
+//     .box6 {
+//         @include box;
+//     }
+// }
+
+.underline {
+    display: inline-block;
+    padding-bottom: 7px;
+    position: relative;
+
+    &::after {
+        background-color: black;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        right: 0;
+        position: absolute;
+        transition: .5s all;
+        width: 5%;
+    }
+
+    &:hover::after {
+        width: 33%;
+    }
 }
 
 .wakukage {
     // border: 1px ridge black;
     // box-shadow: 2px 2px 1px rgba(0,0,0,0.4);
-		// filter: drop-shadow(2px,2px,2px,2px rgba(0,0,0,0.4));
-		box-shadow:
-    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
-    0 5px 6.1px rgba(0, 0, 0, 0.076),
-    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
-    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
-    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
-    0 101px 74px rgba(0, 0, 0, 0.13);
+    // filter: drop-shadow(2px,2px,2px,2px rgba(0,0,0,0.4));
+    box-shadow:
+        0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+        0 5px 6.1px rgba(0, 0, 0, 0.076),
+        0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+        0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+        0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+        0 101px 74px rgba(0, 0, 0, 0.13);
 }
 
 .mbtn{
@@ -227,66 +225,88 @@ h1 {
 }
 
 @media screen and (max-width: ($sp)) {
-	html{
-		font-size: 62.5%;
-	}
-	.allwrapper{
-		width: 100%;
-	}
-	.wrapper{
-		width: 100%;
-	}
-	@mixin box{
-		height: 370px;
-		width: 85vw;
-		font-weight: bold;
-		margin-bottom: 25px;
-		img{
-			width: 100%;
-		}
-		p:last-of-type{
-				height: 110px;
-				display: flex;
-				flex-wrap: wrap;
-		}
-		.words{
-			display: flex;
-			flex-direction: column;
-			padding: 0 10px;
-		}
-		a{
-			display: flex;
-			justify-content: end;
-		}
-	}
-	.boxes{
-		margin: auto 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		.box1 {
-			@include box;
-		}
+    html {
+        font-size: 62.5%;
+    }
 
-		.box2 {
-			@include box;
-		}
+    .allwrapper {
+        width: 100%;
+    }
 
-		.box3 {
-			@include box;
-		}
+    .wrapper {
+        width: 100%;
+    }
 
-		.box4 {
-			@include box;
-		}
+    .n2_clear {
+        width: 100%;
 
-		.box5 {
-			@include box;
-		}
+        .kv_text_img {
 
-		.box6 {
-			@include box;
-		}
-	}
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+
+    @mixin box {
+        height: 370px;
+        width: 85vw;
+        font-weight: bold;
+        margin-bottom: 25px;
+
+        img {
+            width: 100%;
+        }
+
+        p:last-of-type {
+            height: 110px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .words {
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px;
+        }
+
+        a {
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    .boxes {
+        margin: auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .box1 {
+            @include box;
+        }
+
+        .box2 {
+            @include box;
+        }
+
+        .box3 {
+            @include box;
+        }
+
+        .box4 {
+            @include box;
+        }
+
+        .box5 {
+            @include box;
+        }
+
+        .box6 {
+            @include box;
+        }
+    }
 }
