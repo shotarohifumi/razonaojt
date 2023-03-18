@@ -39,6 +39,8 @@ html {
 
 
 
+
+
 .n2_clear {
     position: relative;
     max-width: 1024px;
@@ -205,24 +207,27 @@ h1 {
         0 101px 74px rgba(0, 0, 0, 0.13);
 }
 
-.mbtn{
-	// display: inline-block;
-	padding: 0.8em 3em;
-	background-color: #808080;
-	box-shadow: 0 5px 0 #696969;
-	border-radius: 60px;
-	color: #fff;
-	cursor: pointer;
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-	width: 20px;
-	margin: 50px auto;
-	&:active{
-		box-shadow: none;
-		transform: translateY(5px);
-	}
+.mbtn {
+    // display: inline-block;
+    padding: 0.8em 3em;
+    background-color: #808080;
+    box-shadow: 0 5px 0 #696969;
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    margin: 50px auto;
+
+    &:active {
+        box-shadow: none;
+        transform: translateY(5px);
+    }
 }
+
+// レスポンシブ
 
 @media screen and (max-width: ($sp)) {
     html {
@@ -238,7 +243,12 @@ h1 {
     }
 
     .n2_clear {
-        width: 100%;
+        width: 100vw;
+        position: static;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1em;
 
         .kv_text_img {
 
@@ -247,6 +257,27 @@ h1 {
                 display: none;
             }
         }
+    }
+
+    .n2_clear .kv_sm_img {
+        display: flex;
+        justify-content: center;
+        position: static;
+    }
+
+    #global__navi-menu {
+        display: none;
+    }
+
+    #mg-wprm-wrap{
+            background-color: #efefef75;
+
+    }
+
+    html body div #wprmenu_bar {
+        height: 42px;
+        margin: 50px 0px;
+        background-color: transparent;
     }
 
 
