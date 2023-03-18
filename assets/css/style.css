@@ -97,17 +97,13 @@ h1 {
   flex-direction: column;
   padding: 0 10px;
 }
-.boxes .box1 a {
+.boxes .box1 .underline span {
   display: flex;
   justify-content: end;
-}
-
-.underline {
-  display: inline-block;
   padding-bottom: 7px;
   position: relative;
 }
-.underline::after {
+.boxes .box1 .underline span::after {
   background-color: black;
   bottom: 0;
   content: "";
@@ -118,7 +114,7 @@ h1 {
   transition: 0.5s all;
   width: 5%;
 }
-.underline:hover::after {
+.boxes .box1 .underline span:hover::after {
   width: 33%;
 }
 
@@ -126,7 +122,7 @@ h1 {
   box-shadow: 0 1.9px 2.5px rgba(0, 0, 0, 0.057), 0 5px 6.1px rgba(0, 0, 0, 0.076), 0 10.1px 11.4px rgba(0, 0, 0, 0.086), 0 19.2px 19.8px rgba(0, 0, 0, 0.092), 0 38.4px 34.8px rgba(0, 0, 0, 0.1), 0 101px 74px rgba(0, 0, 0, 0.13);
 }
 
-.mbtn {
+.mbtn, .btn4back {
   padding: 0.8em 3em;
   background-color: #808080;
   box-shadow: 0 5px 0 #696969;
@@ -139,14 +135,14 @@ h1 {
   width: 20px;
   margin: 50px auto;
 }
-.mbtn:active {
+.mbtn:active, .btn4back:active {
   box-shadow: none;
   transform: translateY(5px);
 }
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 62.5%;
+    font-size: 1.6129032258vw;
   }
   .allwrapper {
     width: 100%;
@@ -181,6 +177,12 @@ h1 {
     margin: 50px 0px;
     background-color: transparent;
   }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.5rem 0 0.5rem 0;
+    font-weight: bold;
+  }
   .boxes {
     margin: auto 0;
     display: flex;
@@ -189,16 +191,15 @@ h1 {
     flex-direction: column;
   }
   .boxes .box1 {
-    height: 370px;
+    height: auto;
     width: 85vw;
     font-weight: bold;
-    margin-bottom: 25px;
   }
   .boxes .box1 img {
     width: 100%;
   }
   .boxes .box1 p:last-of-type {
-    height: 110px;
+    padding-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -207,123 +208,107 @@ h1 {
     flex-direction: column;
     padding: 0 10px;
   }
-  .boxes .box1 a {
+  .boxes .box1 .underline span {
     display: flex;
     justify-content: end;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    position: relative;
   }
-  .boxes .box2 {
-    height: 370px;
-    width: 85vw;
-    font-weight: bold;
-    margin-bottom: 25px;
+  .boxes .box1 .underline span::after {
+    background-color: black;
+    bottom: 0;
+    display: block;
+    height: 1px;
+    right: 0;
+    position: absolute;
+    transition: 0.5s all;
+    width: 3vw;
   }
-  .boxes .box2 img {
-    width: 100%;
+  .boxes .box1 .underline span:hover::after {
+    width: 10vw;
   }
-  .boxes .box2 p:last-of-type {
-    height: 110px;
+  .mbtn, .btn4back {
+    padding: 1.8em 3em;
+    background-color: #808080;
+    box-shadow: 0 5px 0 #696969;
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    width: 100px;
+    margin: 20px auto;
   }
-  .boxes .box2 .words {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
+  .mbtn:active, .btn4back:active {
+    box-shadow: none;
+    transform: translateY(5px);
   }
-  .boxes .box2 a {
-    display: flex;
-    justify-content: end;
-  }
-  .boxes .box3 {
-    height: 370px;
-    width: 85vw;
-    font-weight: bold;
-    margin-bottom: 25px;
-  }
-  .boxes .box3 img {
-    width: 100%;
-  }
-  .boxes .box3 p:last-of-type {
-    height: 110px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .boxes .box3 .words {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
-  }
-  .boxes .box3 a {
+}
+@media screen and (max-width: 600px) {
+  .boxes .box1 .underline span {
     display: flex;
     justify-content: end;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    position: relative;
   }
-  .boxes .box4 {
-    height: 370px;
-    width: 85vw;
-    font-weight: bold;
-    margin-bottom: 25px;
+  .boxes .box1 .underline span::after {
+    background-color: black;
+    bottom: 0;
+    display: block;
+    height: 1px;
+    right: 0;
+    position: absolute;
+    transition: 0.5s all;
+    width: 3vw;
   }
-  .boxes .box4 img {
-    width: 100%;
+  .boxes .box1 .underline span:hover::after {
+    width: 13vw;
   }
-  .boxes .box4 p:last-of-type {
-    height: 110px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .boxes .box4 .words {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
-  }
-  .boxes .box4 a {
-    display: flex;
-    justify-content: end;
-  }
-  .boxes .box5 {
-    height: 370px;
-    width: 85vw;
-    font-weight: bold;
-    margin-bottom: 25px;
-  }
-  .boxes .box5 img {
-    width: 100%;
-  }
-  .boxes .box5 p:last-of-type {
-    height: 110px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .boxes .box5 .words {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
-  }
-  .boxes .box5 a {
+}
+@media screen and (max-width: 470px) {
+  .boxes .box1 .underline span {
     display: flex;
     justify-content: end;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    position: relative;
   }
-  .boxes .box6 {
-    height: 370px;
-    width: 85vw;
-    font-weight: bold;
-    margin-bottom: 25px;
+  .boxes .box1 .underline span::after {
+    background-color: black;
+    bottom: 0;
+    display: block;
+    height: 1px;
+    right: 0;
+    position: absolute;
+    transition: 0.5s all;
+    width: 3vw;
   }
-  .boxes .box6 img {
-    width: 100%;
+  .boxes .box1 .underline span:hover::after {
+    width: 15vw;
   }
-  .boxes .box6 p:last-of-type {
-    height: 110px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .boxes .box6 .words {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
-  }
-  .boxes .box6 a {
+}
+@media screen and (max-width: 400px) {
+  .boxes .box1 .underline span {
     display: flex;
     justify-content: end;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    position: relative;
+  }
+  .boxes .box1 .underline span::after {
+    background-color: black;
+    bottom: 0;
+    display: block;
+    height: 1px;
+    right: 0;
+    position: absolute;
+    transition: 0.5s all;
+    width: 3vw;
+  }
+  .boxes .box1 .underline span:hover::after {
+    width: 17vw;
   }
 }/*# sourceMappingURL=style.css.map */

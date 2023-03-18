@@ -51,7 +51,7 @@
                 <div class="words">
                     <p><?php echo get_the_date(); ?></p>
                     <p><?php the_title(); ?></p>
-                    <a class="underline" href="<?php the_permalink(); ?>">READ MORE</a>
+                    <a class="underline" href="<?php the_permalink(); ?>"><span>READ MORE</span></a>
                 </div>
             </div>
          
@@ -62,7 +62,7 @@
 						<div class="box1">
 							<p>表示する記事がありません</p>
 						</div>
-						<?php endif; 							wp_reset_postdata();?>
+						<?php endif; wp_reset_postdata();?>
     </div>
 		</section>
 

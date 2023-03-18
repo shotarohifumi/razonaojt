@@ -35,7 +35,7 @@
       return false;
     });
   });
-</script>
+  </script>
 		<!-- jsもcssと同様wp-contentの直下にいないといけない -->
 		<script src="./wp-content/themes/razonaojt/script.js"></script>
 

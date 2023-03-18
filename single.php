@@ -16,7 +16,7 @@
                 <div class="words">
                     <p><?php echo get_the_date(); ?></p>
                     <p><?php the_title(); ?></p>
-                    <a class="underline" href="<?php the_permalink(); ?>">READ MORE</a>
+                    <a class="underline" href="<?php the_permalink(); ?>"><span>READ MORE</span></a>
                 </div>
             </div>
          
@@ -30,8 +30,8 @@
 						<?php endif; ?>
     </div>
 		</section>
-
-		<a href="<?php the_permalink(); ?>" class="mbtn">more</a>
+		<button type="button" class="btn4back" onclick="history.back();">back</button>
+		<!-- <a href="<?php the_permalink(); ?>" class="mbtn">more</a> -->
 
 
 

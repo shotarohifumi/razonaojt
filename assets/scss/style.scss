@@ -134,12 +134,34 @@ h1 {
         padding: 0 10px;
     }
 
-    a {
-        display: flex;
-        justify-content: end;
-        // padding-bottom: 7px;
-        // border-bottom: solid;
-    }
+    // a {
+
+    //     // padding-bottom: 7px;
+    //     // border-bottom: solid;
+    // }
+		.underline span{
+			display: flex;
+			justify-content: end;
+			// display: inline-block;
+			padding-bottom: 7px;
+			position: relative;
+	
+			&::after {
+					background-color: black;
+					bottom: 0;
+					content: "";
+					display: block;
+					height: 1px;
+					right: 0;
+					position: absolute;
+					transition: .5s all;
+					width: 5%;
+			}
+	
+			&:hover::after {
+					width: 33%;
+			}
+	}
 }
 
 .boxes {
@@ -172,27 +194,7 @@ h1 {
 //     }
 // }
 
-.underline {
-    display: inline-block;
-    padding-bottom: 7px;
-    position: relative;
 
-    &::after {
-        background-color: black;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 1px;
-        right: 0;
-        position: absolute;
-        transition: .5s all;
-        width: 5%;
-    }
-
-    &:hover::after {
-        width: 33%;
-    }
-}
 
 .wakukage {
     // border: 1px ridge black;
@@ -207,7 +209,7 @@ h1 {
         0 101px 74px rgba(0, 0, 0, 0.13);
 }
 
-.mbtn {
+.mbtn, .btn4back {
     // display: inline-block;
     padding: 0.8em 3em;
     background-color: #808080;
@@ -231,7 +233,8 @@ h1 {
 
 @media screen and (max-width: ($sp)) {
     html {
-        font-size: 62.5%;
+        // font-size: 62.5%;
+				font-size: 1.612903225833333vw;
     }
 
     .allwrapper {
@@ -280,19 +283,28 @@ h1 {
         background-color: transparent;
     }
 
+		h1 {
+			text-align: center;
+			font-size: 2rem;
+			margin: 1.5rem 0 0.5rem 0;
+			font-weight: bold;
+	  }
 
     @mixin box {
-        height: 370px;
+				height: auto;
+        // height: 370px;
         width: 85vw;
         font-weight: bold;
-        margin-bottom: 25px;
+        // margin-bottom: 25px;
+				// gap: 25px;
 
         img {
             width: 100%;
         }
 
         p:last-of-type {
-            height: 110px;
+						padding-bottom: 70px;
+            // height: 70px;
             display: flex;
             flex-wrap: wrap;
         }
@@ -303,10 +315,39 @@ h1 {
             padding: 0 10px;
         }
 
-        a {
-            display: flex;
-            justify-content: end;
-        }
+        // a {
+        //     display: flex;
+        //     justify-content: end;
+        // }
+				.underline span{
+					display: flex;
+					justify-content: end;
+					// display: inline-block;
+					margin-bottom: 7px;
+					padding-bottom: 7px;
+					position: relative;
+
+					// &::before{
+					// 	content: "";
+					// }
+			
+					&::after {
+							background-color: black;
+							bottom: 0;
+							// content: "";
+							display: block;
+							height: 1px;
+							right: 0;
+							position: absolute;
+							transition: .5s all;
+							width: 3vw;
+					}
+			
+					&:hover::after {
+						  // width: inline-block;
+							width: 10vw;
+					}
+			}
     }
 
     .boxes {
@@ -320,24 +361,143 @@ h1 {
             @include box;
         }
 
-        .box2 {
-            @include box;
-        }
+        // .box2 {
+        //     @include box;
+        // }
 
-        .box3 {
-            @include box;
-        }
+        // .box3 {
+        //     @include box;
+        // }
 
-        .box4 {
-            @include box;
-        }
+        // .box4 {
+        //     @include box;
+        // }
 
-        .box5 {
-            @include box;
-        }
+        // .box5 {
+        //     @include box;
+        // }
 
-        .box6 {
-            @include box;
-        }
+        // .box6 {
+        //     @include box;
+        // }
     }
+		.mbtn, .btn4back {
+			// display: inline-block;
+			padding: 1.8em 3em;
+			background-color: #808080;
+			box-shadow: 0 5px 0 #696969;
+			border-radius: 60px;
+			color: #fff;
+			cursor: pointer;
+			text-decoration: none;
+			display: flex;
+			justify-content: center;
+			width: 100px;
+			margin: 20px auto;
+	
+			&:active {
+					box-shadow: none;
+					transform: translateY(5px);
+			}
+	}
+}
+
+// アンダーラインの画面サイズ対応
+@media screen and (max-width: (600px)) {
+	.boxes .box1 .underline span{
+		display: flex;
+		justify-content: end;
+		// display: inline-block;
+		margin-bottom: 7px;
+		padding-bottom: 7px;
+		position: relative;
+
+		// &::before{
+		// 	content: "";
+		// }
+
+		&::after {
+				background-color: black;
+				bottom: 0;
+				// content: "";
+				display: block;
+				height: 1px;
+				right: 0;
+				position: absolute;
+				transition: .5s all;
+				width: 3vw;
+		}
+
+		&:hover::after {
+				// width: inline-block;
+				width: 13vw;
+		}
+}
+
+}
+
+@media screen and (max-width: (470px)) {
+	.boxes .box1 .underline span{
+		display: flex;
+		justify-content: end;
+		// display: inline-block;
+		margin-bottom: 7px;
+		padding-bottom: 7px;
+		position: relative;
+
+		// &::before{
+		// 	content: "";
+		// }
+
+		&::after {
+				background-color: black;
+				bottom: 0;
+				// content: "";
+				display: block;
+				height: 1px;
+				right: 0;
+				position: absolute;
+				transition: .5s all;
+				width: 3vw;
+		}
+
+		&:hover::after {
+				// width: inline-block;
+				width: 15vw;
+		}
+}
+
+}
+
+@media screen and (max-width: (400px)) {
+	.boxes .box1 .underline span{
+		display: flex;
+		justify-content: end;
+		// display: inline-block;
+		margin-bottom: 7px;
+		padding-bottom: 7px;
+		position: relative;
+
+		// &::before{
+		// 	content: "";
+		// }
+
+		&::after {
+				background-color: black;
+				bottom: 0;
+				// content: "";
+				display: block;
+				height: 1px;
+				right: 0;
+				position: absolute;
+				transition: .5s all;
+				width: 3vw;
+		}
+
+		&:hover::after {
+				// width: inline-block;
+				width: 17vw;
+		}
+}
+
 }
