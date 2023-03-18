@@ -10,9 +10,9 @@ html {
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-* {
-    //  border: 1px solid black;
-}
+// * {
+//      border: 1px solid black;
+// }
 
 
 .allwrapper {
@@ -132,7 +132,7 @@ h1 {
         padding: 0 10px;
     }
 
-    span {
+    a {
         display: flex;
         justify-content: end;
         // padding-bottom: 7px;

@@ -97,7 +97,7 @@ h1 {
   flex-direction: column;
   padding: 0 10px;
 }
-.boxes .box1 span {
+.boxes .box1 a {
   display: flex;
   justify-content: end;
 }
