@@ -139,29 +139,29 @@ h1 {
     //     // padding-bottom: 7px;
     //     // border-bottom: solid;
     // }
-		.underline span{
-			display: flex;
-			justify-content: end;
-			// display: inline-block;
-			padding-bottom: 7px;
-			position: relative;
-	
-			&::after {
-					background-color: black;
-					bottom: 0;
-					content: "";
-					display: block;
-					height: 1px;
-					right: 0;
-					position: absolute;
-					transition: .5s all;
-					width: 5%;
-			}
-	
-			&:hover::after {
-					width: 33%;
-			}
-	}
+    .underline span {
+        display: flex;
+        justify-content: end;
+        // display: inline-block;
+        padding-bottom: 7px;
+        position: relative;
+
+        &::after {
+            background-color: black;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 1px;
+            right: 0;
+            position: absolute;
+            transition: .5s all;
+            width: 5%;
+        }
+
+        &:hover::after {
+            width: 33%;
+        }
+    }
 }
 
 .boxes {
@@ -209,7 +209,8 @@ h1 {
         0 101px 74px rgba(0, 0, 0, 0.13);
 }
 
-.mbtn, .btn4back {
+.mbtn,
+.btn4back {
     // display: inline-block;
     padding: 0.8em 3em;
     background-color: #808080;
@@ -234,7 +235,7 @@ h1 {
 @media screen and (max-width: ($sp)) {
     html {
         // font-size: 62.5%;
-				font-size: 1.612903225833333vw;
+        font-size: 1.612903225833333vw;
     }
 
     .allwrapper {
@@ -246,7 +247,7 @@ h1 {
     }
 
     .n2_clear {
-        width: 100vw;
+        width: 100%;
         position: static;
         display: flex;
         flex-direction: column-reverse;
@@ -260,6 +261,10 @@ h1 {
                 display: none;
             }
         }
+
+        .n2-ss-align {
+            width: 100%;
+        }
     }
 
     .n2_clear .kv_sm_img {
@@ -272,8 +277,8 @@ h1 {
         display: none;
     }
 
-    #mg-wprm-wrap{
-            background-color: #efefef75;
+    #mg-wprm-wrap {
+        background-color: #efefef75;
 
     }
 
@@ -283,27 +288,27 @@ h1 {
         background-color: transparent;
     }
 
-		h1 {
-			text-align: center;
-			font-size: 2rem;
-			margin: 1.5rem 0 0.5rem 0;
-			font-weight: bold;
-	  }
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 1.5rem 0 0.5rem 0;
+        font-weight: bold;
+    }
 
     @mixin box {
-				height: auto;
+        height: auto;
         // height: 370px;
         width: 85vw;
         font-weight: bold;
         // margin-bottom: 25px;
-				// gap: 25px;
+        // gap: 25px;
 
         img {
             width: 100%;
         }
 
         p:last-of-type {
-						padding-bottom: 70px;
+            padding-bottom: 70px;
             // height: 70px;
             display: flex;
             flex-wrap: wrap;
@@ -319,35 +324,35 @@ h1 {
         //     display: flex;
         //     justify-content: end;
         // }
-				.underline span{
-					display: flex;
-					justify-content: end;
-					// display: inline-block;
-					margin-bottom: 7px;
-					padding-bottom: 7px;
-					position: relative;
+        .underline span {
+            display: flex;
+            justify-content: end;
+            // display: inline-block;
+            margin-bottom: 7px;
+            padding-bottom: 7px;
+            position: relative;
 
-					// &::before{
-					// 	content: "";
-					// }
-			
-					&::after {
-							background-color: black;
-							bottom: 0;
-							// content: "";
-							display: block;
-							height: 1px;
-							right: 0;
-							position: absolute;
-							transition: .5s all;
-							width: 3vw;
-					}
-			
-					&:hover::after {
-						  // width: inline-block;
-							width: 10vw;
-					}
-			}
+            // &::before{
+            // 	content: "";
+            // }
+
+            &::after {
+                background-color: black;
+                bottom: 0;
+                // content: "";
+                display: block;
+                height: 1px;
+                right: 0;
+                position: absolute;
+                transition: .5s all;
+                width: 3vw;
+            }
+
+            &:hover::after {
+                // width: inline-block;
+                width: 10vw;
+            }
+        }
     }
 
     .boxes {
@@ -381,123 +386,125 @@ h1 {
         //     @include box;
         // }
     }
-		.mbtn, .btn4back {
-			// display: inline-block;
-			padding: 1.8em 3em;
-			background-color: #808080;
-			box-shadow: 0 5px 0 #696969;
-			border-radius: 60px;
-			color: #fff;
-			cursor: pointer;
-			text-decoration: none;
-			display: flex;
-			justify-content: center;
-			width: 100px;
-			margin: 20px auto;
-	
-			&:active {
-					box-shadow: none;
-					transform: translateY(5px);
-			}
-	}
+
+    .mbtn,
+    .btn4back {
+        // display: inline-block;
+        padding: 1.8em 3em;
+        background-color: #808080;
+        box-shadow: 0 5px 0 #696969;
+        border-radius: 60px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        margin: 20px auto;
+
+        &:active {
+            box-shadow: none;
+            transform: translateY(5px);
+        }
+    }
 }
 
 // アンダーラインの画面サイズ対応
 @media screen and (max-width: (600px)) {
-	.boxes .box1 .underline span{
-		display: flex;
-		justify-content: end;
-		// display: inline-block;
-		margin-bottom: 7px;
-		padding-bottom: 7px;
-		position: relative;
+    .boxes .box1 .underline span {
+        display: flex;
+        justify-content: end;
+        // display: inline-block;
+        margin-bottom: 7px;
+        padding-bottom: 7px;
+        position: relative;
 
-		// &::before{
-		// 	content: "";
-		// }
+        // &::before{
+        // 	content: "";
+        // }
 
-		&::after {
-				background-color: black;
-				bottom: 0;
-				// content: "";
-				display: block;
-				height: 1px;
-				right: 0;
-				position: absolute;
-				transition: .5s all;
-				width: 3vw;
-		}
+        &::after {
+            background-color: black;
+            bottom: 0;
+            // content: "";
+            display: block;
+            height: 1px;
+            right: 0;
+            position: absolute;
+            transition: .5s all;
+            width: 3vw;
+        }
 
-		&:hover::after {
-				// width: inline-block;
-				width: 13vw;
-		}
-}
+        &:hover::after {
+            // width: inline-block;
+            width: 13vw;
+        }
+    }
 
 }
 
 @media screen and (max-width: (470px)) {
-	.boxes .box1 .underline span{
-		display: flex;
-		justify-content: end;
-		// display: inline-block;
-		margin-bottom: 7px;
-		padding-bottom: 7px;
-		position: relative;
+    .boxes .box1 .underline span {
+        display: flex;
+        justify-content: end;
+        // display: inline-block;
+        margin-bottom: 7px;
+        padding-bottom: 7px;
+        position: relative;
 
-		// &::before{
-		// 	content: "";
-		// }
+        // &::before{
+        // 	content: "";
+        // }
 
-		&::after {
-				background-color: black;
-				bottom: 0;
-				// content: "";
-				display: block;
-				height: 1px;
-				right: 0;
-				position: absolute;
-				transition: .5s all;
-				width: 3vw;
-		}
+        &::after {
+            background-color: black;
+            bottom: 0;
+            // content: "";
+            display: block;
+            height: 1px;
+            right: 0;
+            position: absolute;
+            transition: .5s all;
+            width: 3vw;
+        }
 
-		&:hover::after {
-				// width: inline-block;
-				width: 15vw;
-		}
-}
+        &:hover::after {
+            // width: inline-block;
+            width: 15vw;
+        }
+    }
 
 }
 
 @media screen and (max-width: (400px)) {
-	.boxes .box1 .underline span{
-		display: flex;
-		justify-content: end;
-		// display: inline-block;
-		margin-bottom: 7px;
-		padding-bottom: 7px;
-		position: relative;
+    .boxes .box1 .underline span {
+        display: flex;
+        justify-content: end;
+        // display: inline-block;
+        margin-bottom: 7px;
+        padding-bottom: 7px;
+        position: relative;
 
-		// &::before{
-		// 	content: "";
-		// }
+        // &::before{
+        // 	content: "";
+        // }
 
-		&::after {
-				background-color: black;
-				bottom: 0;
-				// content: "";
-				display: block;
-				height: 1px;
-				right: 0;
-				position: absolute;
-				transition: .5s all;
-				width: 3vw;
-		}
+        &::after {
+            background-color: black;
+            bottom: 0;
+            // content: "";
+            display: block;
+            height: 1px;
+            right: 0;
+            position: absolute;
+            transition: .5s all;
+            width: 3vw;
+        }
 
-		&:hover::after {
-				// width: inline-block;
-				width: 17vw;
-		}
-}
+        &:hover::after {
+            // width: inline-block;
+            width: 17vw;
+        }
+    }
 
 }

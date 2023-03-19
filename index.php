@@ -7,8 +7,7 @@
 
         <!-- kv -->
         <section class="kv">
-
-            <!-- <div class="kvimg wrapper"> -->
+          
             <div class="n2_clear">
                 <?php
                 echo do_shortcode('[smartslider3 slider="2"]');
