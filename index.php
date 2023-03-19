@@ -17,8 +17,6 @@
                 <div class="kv_text_img"><img src="<?php echo get_template_directory_uri(); ?>/img_file/visual_text_pc.png" alt=""></div>
                 
             </div>
-
-
             <div class="kv_text inner">進化し続ける「街」アメリカンビレッジマガジン</div>
 
         </section>
