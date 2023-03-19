@@ -273,6 +273,15 @@ h1 {
         position: static;
     }
 
+    .kv_text {
+        text-align: center;
+        margin: 1rem;
+        span{
+            display: block;
+
+        }
+    }
+
     #global__navi-menu {
         display: none;
     }

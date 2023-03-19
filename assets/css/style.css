@@ -171,6 +171,13 @@ h1 {
     justify-content: center;
     position: static;
   }
+  .kv_text {
+    text-align: center;
+    margin: 1rem;
+  }
+  .kv_text span {
+    display: block;
+  }
   #global__navi-menu {
     display: none;
   }
