@@ -62,10 +62,13 @@
 							<p>表示する記事がありません</p>
 						</div>
 						<?php endif; wp_reset_postdata();?>
+						<div id="more_disp">
+							<span href="" class="mbtn">more</span>
+						</div>
     </div>
 		</section>
 
-		<span href="" class="mbtn">more</span>
+
 
 </div>
 

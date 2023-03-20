@@ -128,8 +128,8 @@ h1 {
 .mbtn,
 .btn4back {
   padding: 0.8em 3em;
-  background-color: #808080;
-  box-shadow: 0 5px 0 #696969;
+  background-color: #333333;
+  box-shadow: 0 5px 0 #111111;
   border-radius: 60px;
   color: #fff;
   cursor: pointer;
@@ -258,22 +258,23 @@ h1 {
   .boxes .box1 .underline span:hover::after {
     width: 10vw;
   }
-  .mbtn,
-  .btn4back {
-    padding: 1.8em 3em;
-    background-color: #808080;
-    box-shadow: 0 5px 0 #696969;
+  .boxes .mbtn,
+  .boxes .btn4back {
+    padding: 1em 1em;
+    background-color: #333333;
+    box-shadow: 0 5px 0 #111111;
     border-radius: 60px;
     color: #fff;
     cursor: pointer;
     text-decoration: none;
     display: flex;
     justify-content: center;
-    width: 100px;
+    width: 90px;
     margin: 20px auto;
+    font-size: 12px;
   }
-  .mbtn:active,
-  .btn4back:active {
+  .boxes .mbtn:active,
+  .boxes .btn4back:active {
     box-shadow: none;
     transform: translateY(5px);
   }

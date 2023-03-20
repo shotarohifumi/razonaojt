@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h1>More Articles</h1>
+<h1>The Article</h1>
 
     <section>	
 		<div class="boxes">

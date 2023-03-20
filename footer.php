@@ -27,7 +27,7 @@
 				console.log(data);
         now_post_num = now_post_num + get_post_num;
         $("#more_disp").remove();
-        $("#content").append(data);
+        $(".boxes").append(data);
       })
       .fail(function(){ // ajax通信成失敗の処理
         alert('エラーが発生しました');

@@ -24,8 +24,17 @@
  
 <?php //ヒアドキュメントで変数に格納し続ける
 $html .= <<<EOM
-●ここに投稿記事の内容（タイトルとか画像とか）を記述（元のファイルと同じように投稿記事を出力させればOK）
-EOM;
+	<div class="boxes">
+		<div class="box1">
+			<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="cafe">
+			<div class="words">
+					<p><?php echo get_the_date(); ?></p>
+					<p><?php the_title(); ?></p>
+					<a class="underline" href="<?php the_permalink(); ?>"><span>READ MORE</span></a>
+			</div>
+		</div>
+	</div>
+	EOM;
 ?>
  
   <?php endwhile;?>
