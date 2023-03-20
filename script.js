@@ -5,6 +5,7 @@ $(function(){
 	$(".box1").on("mouseleave",function(){
 		$(this).removeClass("wakukage");
 	})
+
 	// $(".box2").on("mouseover",function(){
 	// 	$(this).addClass("wakukage");
 	// })
