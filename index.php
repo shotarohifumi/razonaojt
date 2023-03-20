@@ -9,12 +9,13 @@
         <section class="kv">
 
             <div class="kvimg wrapper">
-            <div class="n2_clear">
+            <div class="n2_clears">
                 <?php
                 echo do_shortcode('[smartslider3 slider="2"]');
                 ?>
                 <div class="kv_sm_img"><img src="<?php echo get_template_directory_uri(); ?>/img_file/logo.png" alt=""></div>
                 <div class="kv_text_img"><img src="<?php echo get_template_directory_uri(); ?>/img_file/visual_text_pc.png" alt=""></div>
+                <div class="kv_text_img_sp"><img src="<?php echo get_template_directory_uri(); ?>/img_file/visual_text_sp.png" alt=""></div>
                 
             </div>
             <div class="kv_text inner">進化し続ける「街」<span>アメリカンビレッジマガジン</span></div>

@@ -20,19 +20,19 @@ html {
   margin: 50px 0px;
 }
 
-.n2_clear {
+.n2_clears {
   position: relative;
   max-width: 1024px;
   margin: 0 auto;
 }
-.n2_clear .kv_sm_img {
+.n2_clears .kv_sm_img {
   position: absolute;
   width: 30%;
   height: auto;
   top: -110px;
   left: -90px;
 }
-.n2_clear .kv_text_img {
+.n2_clears .kv_text_img {
   position: absolute;
   top: 88%;
   right: -4em;
@@ -41,13 +41,16 @@ html {
   transform: translateY(-50%);
   display: block;
 }
-.n2_clear .kv_text_img img {
+.n2_clears .kv_text_img img {
   width: 100%;
   height: auto;
 }
+.n2_clears .kv_text_img_sp {
+  display: none;
+}
 
 .kv_text {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .inner {
@@ -152,21 +155,36 @@ h1 {
   .wrapper {
     width: 100%;
   }
-  .n2_clear {
+  .n2_clears {
     width: 100%;
-    position: static;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    position: relative;
     gap: 1em;
+    padding: 12px;
   }
-  .n2_clear .kv_text_img img {
+  .n2_clears .kv_sm_img {
+    position: static;
+  }
+  .n2_clears .kv_text_img {
     display: none;
   }
-  .n2_clear .n2-ss-align {
+  .n2_clears .n2-ss-align {
     width: 100%;
   }
-  .n2_clear .kv_sm_img {
+  .n2_clears .kv_text_img_sp {
+    position: absolute;
+    top: 35%;
+    /* right: 50px; */
+    height: 30%;
+    /* z-index: 3; */
+    width: 60%;
+    /* height: 10%; */
+    display: block;
+    left: 4%;
+  }
+  .n2_clears .kv_sm_img {
     display: flex;
     justify-content: center;
     position: static;
